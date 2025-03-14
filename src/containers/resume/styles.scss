@@ -1,0 +1,139 @@
+.resume {
+  height: 100%;
+  padding: 20px;
+
+  .page-header-content {
+    margin-bottom: 20px;
+  }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  padding: 20px;
+
+  &__experience,
+  &__education {
+    width: 50%; // Default width for each section
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__header-text {
+      display: inline-block;
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 2px solid var(--yellow-theme-main-color);
+      margin-bottom: 20px; // Space below the header
+    }
+
+    &__image-wrapper {
+      text-align: center; // Center the image
+      margin: 20px 0; // Space around the image
+    }
+
+    &__image {
+      max-width: 100%; // Make the image responsive
+      height: auto; // Maintain aspect ratio
+    }
+
+    &__vertical-timeline-element {
+      padding: 0px 0px 30px 0px;
+
+      &:last-child {
+        padding-bottom: 0px; // Remove padding for the last element
+      }
+    }
+
+    .vertical-timeline-element-title-wrapper {
+      display: flex;
+      align-items: center;
+
+      h3,
+      h4 {
+        font-size: 16px; // Title font size
+      }
+
+      h4 {
+        margin-left: 8px; // Space between title and subtitle
+      }
+    }
+
+    .vertical-timeline-element-title-wrapper-description {
+      font-size: 18px; // Description font size
+    }
+
+    .vertical-timeline-element-title-wrapper-date {
+      font-size: 18px; // Description font size
+    }
+    .vertical-timeline-element-content {
+      box-shadow: none; // Remove shadow
+    }
+
+    .vertical-timeline-element-content-arrow {
+      display: none; // Hide arrow
+    }
+
+    .vertical-timeline-element-date {
+      opacity: 1;
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 18px; // Date font size
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media only screen and (max-width: 1200px) {
+  .timeline {
+    &__experience,
+    &__education {
+      width: 100%; // Stack sections on medium screens
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline {
+    flex-direction: column; // Stack sections vertically
+
+    &__experience,
+    &__education {
+      width: 100%; // Full width on small screens
+      gap: 1.5rem; // Adjust gap for smaller screens
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .timeline {
+    padding: 10px; // Reduce padding on very small screens
+
+    &__header-text {
+      font-size: 20px; // Smaller font size for headers
+    }
+
+    .vertical-timeline-element-title-wrapper {
+      h3,
+      h4 {
+        font-size: 14px; // Smaller font size for titles
+      }
+    }
+
+    .vertical-timeline-element-title-wrapper-description {
+      font-size: 16px; // Smaller font size for descriptions
+    }
+
+    .vertical-timeline-element-date {
+      font-size: 16px; // Smaller font size for dates
+    }
+  }
+}
