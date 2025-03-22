@@ -1,3 +1,7 @@
+body{
+  font-family: sans-serif;
+}
+
 .about {
   &__content {
     display: flex;
@@ -25,7 +29,7 @@
       p {
         color: var(--yellow-theme-sub-text-color);
         font-size: 1.8rem;
-        line-height: 1.65;
+        line-height: 1.75;
         padding-bottom: 20px;
         border-bottom: 1px dashed var(--yellow-theme-main-color);
       }
