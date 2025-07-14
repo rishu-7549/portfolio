@@ -12,21 +12,21 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 2,
-    name: "Crypto_Market",
+    name: "Zaika",
     image: ImageOne,
-    link: "https://crypto-tracker-weld-one.vercel.app/",
+    link: "https://zaika-eta.vercel.app/",
   },
   {
     id: 2,
-    name: "Github Info",
-    link: "https://github-info-ruby.vercel.app/",
+    name: "Expense Tracker",
+    link: "https://expense-eta-tracker.vercel.app/",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Message",
+    name: "Baat Chit",
     image: ImageThree,
-    link: "https://message-passing.vercel.app/",
+    link: "https://baat-karein-app-z3db.vercel.app/",
   },
   {
     id: 2,
