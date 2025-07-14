@@ -30,9 +30,9 @@ const portfolioData = [
   },
   {
     id: 2,
-    name: "Weather",
+    name: "Event Scout",
     image: ImageFour,
-    link: "https://weather-app-zeta-inky-87.vercel.app/",
+    link: "https://eventscout-9v4d.onrender.com/",
   },
   {
     id: 3,
